@@ -1,0 +1,9 @@
+No console do Amazon Route 53, crie um novo registro de DNS do tipo "A" para o seu domínio.
+
+Selecione "Alias" como o tipo de registro de DNS e selecione o ALB correspondente na lista de opções.
+
+Salve as alterações.
+
+Agora, quando alguém acessar o seu domínio, ele será redirecionado para o endereço IP do seu Load Balancer, que então encaminhará as solicitações para os pods corretos baseado nas regras de rotas configuradas no Ingress.
+
+Observação: Esse exemplo é para o AWS, caso você esteja usando outra plataforma a configuração pode ser diferente.
